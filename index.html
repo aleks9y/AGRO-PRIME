@@ -11,160 +11,264 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;600;700;800&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,500&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <div class="top-bar">
-      <div class="container top-bar__inner">
-        <span class="top-bar__label">Связь</span>
-        <div class="top-bar__contacts">
-          <a href="tel:+79225560888" class="top-bar__phone">+7 (922) 556-08-88</a>
-          <a href="mailto:ooo.agro-praim@mail.ru" class="top-bar__email">ooo.agro-praim@mail.ru</a>
+    <a class="skip-link" href="#main">К основному содержанию</a>
+
+    <header class="site-header">
+      <div class="top-bar">
+        <div class="container top-bar__inner">
+          <a class="top-bar__brand" href="#">
+            <img src="assets/logo.png" alt="" class="top-bar__logo" width="40" height="22" />
+            <span>Агро-Прайм</span>
+          </a>
+          <nav class="top-bar__nav" aria-label="По странице">
+            <a href="#why">Преимущества</a>
+            <a href="#about">О компании</a>
+            <a href="#requisites">Реквизиты</a>
+            <a href="#contacts">Контакты</a>
+          </nav>
+          <div class="top-bar__contacts">
+            <a href="tel:+79225560888" class="top-bar__phone">+7 (922) 556-08-88</a>
+            <a href="mailto:ooo.agro-praim@mail.ru" class="top-bar__email">ooo.agro-praim@mail.ru</a>
+          </div>
         </div>
       </div>
-    </div>
 
-    <header class="hero">
-      <div class="hero__bg" aria-hidden="true"></div>
-      <div class="container hero__content">
-        <img src="assets/logo.png" alt="Логотип Агро-Прайм" class="logo" width="360" height="200" />
-        <p class="tag">ООО «АГРО-ПРАЙМ»</p>
-        <h1>Оптовая торговля зерном: выгодно и прозрачно</h1>
-        <p class="hero__lead">
-          Опт по зерновым и зернобобовым культурам, а также масличным — оперативно закрываем заявки с понятной
-          логикой поставок и прямой связью с руководителем, без лишних посредников.
-        </p>
-        <div class="hero__actions">
-          <a href="tel:+79225560888" class="button button--primary">+7 (922) 556-08-88</a>
-          <a href="#why" class="button button--ghost">Почему с нами работают</a>
+      <div class="hero">
+        <div class="hero__ambient" aria-hidden="true"></div>
+        <div class="container hero__grid">
+          <div class="hero__copy">
+            <p class="hero__tag">ООО «АГРО-ПРАЙМ»</p>
+            <h1 class="hero__title">Оптовая торговля зерном — прозрачно и по делу</h1>
+            <p class="hero__lead">
+              Зерновые и зернобобовые, масличные культуры. Прямая связь с руководителем, понятные сроки и
+              документооборот без лишних звеньев.
+            </p>
+            <div class="hero__actions">
+              <a href="tel:+79225560888" class="btn btn--primary">Позвонить</a>
+              <a href="mailto:ooo.agro-praim@mail.ru" class="btn btn--secondary">Написать</a>
+              <a href="#why" class="btn btn--ghost">Подробнее</a>
+            </div>
+            <p class="hero__hint">Бузулук, Оренбургская область · поставки по региону и дальше — по договорённости</p>
+          </div>
+          <div class="hero__media">
+            <figure class="hero__figure">
+              <img
+                src="assets/photo-hero.jpg"
+                alt="Зерновое поле"
+                width="1200"
+                height="900"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </figure>
+            <div class="hero__stat" aria-hidden="true">
+              <span class="hero__stat-line"></span>
+              <span class="hero__stat-text">опт · зерно · логистика</span>
+            </div>
+          </div>
         </div>
-        <p class="hero__hint">Работаем в Оренбургской области и готовы обсудить поставки в ваш регион</p>
       </div>
     </header>
 
-    <main>
-      <section id="why" class="section section--why">
+    <main id="main">
+      <section class="visual-strip-wrap" aria-label="Тематические изображения">
+        <div class="visual-strip">
+          <div class="visual-strip__item visual-strip__item--tall">
+            <img
+              src="assets/photo-strip-tall.jpg"
+              alt="Уборочная техника или поле"
+              width="800"
+              height="1000"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="visual-strip__item">
+            <img
+              src="assets/photo-strip-middle.jpg"
+              alt="Элеватор, хранение или логистика зерна"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="visual-strip__item">
+            <img
+              src="assets/photo-strip-top-right.jpg"
+              alt="Агрокультура или регион"
+              width="800"
+              height="600"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+          <div class="visual-strip__item visual-strip__item--wide">
+            <img
+              src="assets/photo-strip-wide.jpg"
+              alt="Зерно, культура или переработка"
+              width="1200"
+              height="700"
+              loading="lazy"
+              decoding="async"
+            />
+          </div>
+        </div>
+      </section>
+
+      <section id="why" class="section section--tight">
         <div class="container">
-          <p class="section__eyebrow">С чем к нам обращаются</p>
-          <h2 class="section__title">Удобно тем, кто ценит прямой договор и честные условия</h2>
+          <header class="section-head">
+            <p class="section-head__eyebrow">Почему обращаются</p>
+            <h2 class="section-head__title">Партнёрский формат для оптовых сделок</h2>
+          </header>
           <div class="feature-grid">
             <article class="feature-card">
-              <span class="feature-card__icon" aria-hidden="true">◆</span>
-              <h3 class="feature-card__title">Оперативный ответ</h3>
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <circle cx="12" cy="12" r="9" />
+                  <path d="M12 7v5l3 2" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Быстрая коммуникация</h3>
               <p>
-                Вопросы по объёмам, срокам и логистике решает руководитель — без длинных цепочек согласований. Вы
-                сразу понимаете, что возможно и в какие сроки.
+                Объёмы, сроки и логистика — напрямую с руководителем. Меньше ожидания, больше ясности по следующему
+                шагу.
               </p>
             </article>
             <article class="feature-card">
-              <span class="feature-card__icon" aria-hidden="true">◆</span>
-              <h3 class="feature-card__title">Узкий профиль</h3>
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <path d="M4 19V5a1 1 0 011-1h14a1 1 0 011 1v14" stroke-linecap="round" />
+                  <path d="M8 11h8M8 15h5" stroke-linecap="round" />
+                  <path d="M7 21h10" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Профиль по зерну</h3>
               <p>
-                В работе зерновые и зернобобовые, масличные культуры — проще согласовать объёмы, именно нужную культуру,
-                условия поставки и документы, если запрос однородный и конкретный.
+                Зерновые и зернобобовые, масличные — согласуем культуру, партию и условия поставки под конкретный
+                запрос.
               </p>
             </article>
             <article class="feature-card">
-              <span class="feature-card__icon" aria-hidden="true">◆</span>
-              <h3 class="feature-card__title">Прозрачные договоры</h3>
-              <p>
-                Работаем по проверенной юридической структуре ООО с актуальными реквизитами. Удобно для бухгалтерии
-                и банков, если вам важен закрытый цикл документооборота.
-              </p>
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" stroke-linejoin="round" />
+                  <path d="M14 2v6h6M8 13h8M8 17h6" stroke-linecap="round" />
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Документы ООО</h3>
+              <p>Работаем в корпоративной форме с актуальными реквизитами — удобно для бухгалтерии и банка.</p>
             </article>
             <article class="feature-card">
-              <span class="feature-card__icon" aria-hidden="true">◆</span>
-              <h3 class="feature-card__title">Регион и развитие</h3>
+              <div class="feature-card__icon" aria-hidden="true">
+                <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75">
+                  <path d="M12 21s7-4.5 7-11a7 7 0 10-14 0c0 6.5 7 11 7 11z" stroke-linejoin="round" />
+                  <circle cx="12" cy="10" r="2.5" />
+                </svg>
+              </div>
+              <h3 class="feature-card__title">Оренбургский узел</h3>
               <p>
-                Компания зарегистрирована в Бузулуке, ориентирована на поставки в агроцепочки Оренбуржья. Открыты к
-                долгосрочному сотрудничеству, если форматы поставок совпадают.
+                Юридический адрес в Бузулуке, ориентир на агроцепочки региона. Готовы к диалогу о регулярных
+                поставках.
               </p>
             </article>
           </div>
         </div>
       </section>
 
-      <section class="section">
-        <div class="container grid two-columns">
-          <article class="card card--lift">
-            <h2>О компании</h2>
-            <p>
-              <strong>ООО «Агро-Прайм»</strong> — действующая организация, зарегистрированная
-              <strong>21.11.2025</strong>. На практике — оптовая торговля: зерновые и зернобобовые культуры, масличные культуры.
-            </p>
-            <p>
-              Руководитель: <strong>Крыгин Дмитрий Николаевич</strong> — с ним вы можете обсудить условия и
-              сформировать поставку под ваши задачи.
-            </p>
-          </article>
-
-          <article class="card card--lift">
-            <h2>Направления</h2>
-            <p class="accent">ОКВЭД 46.21</p>
-            <p>
-              В ЕГРЮЛ указан код 46.21 (оптовая торговля зерном и смежными категориями по классификатору). На рынке
-              работаем с зерновыми и зернобобовыми, масличными — объёмы, культура и срок подбираются под вашу заявку.
-            </p>
-          </article>
-        </div>
-      </section>
-
-      <section class="cta-band">
-        <div class="container cta-band__inner">
-          <div>
-            <p class="cta-band__eyebrow">Один звонок — дальше решаем вместе</p>
-            <h2 class="cta-band__title">Расскажите об объёме, культуре и сроках</h2>
-            <p class="cta-band__text">
-              Зерновые и зернобобовые, масличные — подберём формат поставки и дальнейшие шаги по сделке. Звоните в
-              рабочее время: ответит руководитель или перезвоним в течение дня. Можно написать на
-              <a href="mailto:ooo.agro-praim@mail.ru" class="cta-band__link">ooo.agro-praim@mail.ru</a>.
+      <section class="cta-panel">
+        <div class="cta-panel__bg" aria-hidden="true"></div>
+        <div class="container cta-panel__inner">
+          <div class="cta-panel__text">
+            <p class="cta-panel__eyebrow">Связь</p>
+            <h2 class="cta-panel__title">Объём, культура, срок — обсудим за один контакт</h2>
+            <p class="cta-panel__desc">
+              Звонок или письмо — дальше согласуем формат сделки и документы.
+              <a href="mailto:ooo.agro-praim@mail.ru" class="cta-panel__link">ooo.agro-praim@mail.ru</a>
             </p>
           </div>
-          <a href="tel:+79225560888" class="button button--light button--lg">+7 (922) 556-08-88</a>
+          <div class="cta-panel__actions">
+            <a href="tel:+79225560888" class="btn btn--on-dark btn--lg">+7 (922) 556-08-88</a>
+          </div>
         </div>
       </section>
 
-      <section class="section section-muted">
+      <section id="about" class="section section--surface">
+        <div class="container about-split">
+          <div class="about-split__visual">
+            <img
+              src="assets/photo-about.jpg"
+              alt="Поле или продукция компании"
+              width="900"
+              height="1100"
+              loading="lazy"
+              decoding="async"
+            />
+            <div class="about-split__badge">ОКВЭД 46.21</div>
+          </div>
+          <div class="about-split__content">
+            <h2 class="about-split__title">О компании и направлении</h2>
+            <p class="about-split__lead">
+              <strong>ООО «Агро-Прайм»</strong> — действующая организация с датой регистрации
+              <strong>21.11.2025</strong>. На рынке фокус на оптовой торговле зерновыми и зернобобовыми, масличными
+              культурами.
+            </p>
+            <p>
+              Руководитель — <strong>Крыгин Дмитрий Николаевич</strong>: по телефону или почте можно согласовать
+              условия и сценарий поставки под вашу задачу.
+            </p>
+            <p class="about-split__muted">
+              В ЕГРЮЛ указан код 46.21 (оптовая торговля зерном и смежными категориями по классификатору). Фактическая
+              линия работы — перепродажа зерна и указанных групп культур оптом.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section id="requisites" class="section section--dark">
         <div class="container">
-          <h2 class="section__title section__title--tight">Реквизиты</h2>
-          <p class="section__sub">Полезно для договора, счетов и проверок контрагента</p>
-          <div class="grid facts">
-            <div class="fact"><span>ОГРН</span><strong>1255600010390</strong></div>
-            <div class="fact"><span>ИНН</span><strong>5603051283</strong></div>
-            <div class="fact"><span>КПП</span><strong>560301001</strong></div>
-            <div class="fact"><span>ОКПО</span><strong>77852883</strong></div>
-            <div class="fact fact--span"><span>Статус МСП</span><strong>Микропредприятие (по реестру)</strong></div>
+          <header class="section-head section-head--on-dark">
+            <p class="section-head__eyebrow">Для договора и проверки</p>
+            <h2 class="section-head__title">Реквизиты и адрес</h2>
+          </header>
+          <div class="req-grid">
+            <div class="req-card"><span class="req-card__label">ОГРН</span><span class="req-card__value">1255600010390</span></div>
+            <div class="req-card"><span class="req-card__label">ИНН</span><span class="req-card__value">5603051283</span></div>
+            <div class="req-card"><span class="req-card__label">КПП</span><span class="req-card__value">560301001</span></div>
+            <div class="req-card"><span class="req-card__label">ОКПО</span><span class="req-card__value">77852883</span></div>
+            <div class="req-card req-card--wide">
+              <span class="req-card__label">Статус МСП</span><span class="req-card__value">Микропредприятие (по реестру)</span>
+            </div>
+            <div class="req-card req-card--address">
+              <span class="req-card__label">Юридический адрес</span>
+              <span class="req-card__value req-card__value--multiline"
+                >461041, Оренбургская область, г. Бузулук, ул. Рабочая, д. 81, офис 514</span
+              >
+            </div>
           </div>
-        </div>
-      </section>
-
-      <section class="section">
-        <div class="container">
-          <h2>Юридический адрес</h2>
-          <p class="address address--card">
-            461041, Оренбургская область, г. Бузулук, ул. Рабочая, д. 81, офис 514
-          </p>
         </div>
       </section>
     </main>
 
     <footer id="contacts" class="footer">
-      <div class="container footer__grid">
-        <div>
-          <h2>Контакты</h2>
-          <p class="footer__lead">Позвоните — обсудим зерновые и зернобобовые, масличные и условия поставки</p>
+      <div class="container footer__inner">
+        <div class="footer__brand">
+          <span class="footer__name">Агро-Прайм</span>
+          <p class="footer__tagline">Оптовая торговля зерном</p>
         </div>
-        <div class="footer__contact">
+        <div class="footer__contact-block">
           <a href="tel:+79225560888" class="footer__phone">+7 (922) 556-08-88</a>
-          <p class="footer__note">Телефон: 8 922 556-08-88</p>
+          <span class="footer__sep">·</span>
           <a href="mailto:ooo.agro-praim@mail.ru" class="footer__mail">ooo.agro-praim@mail.ru</a>
         </div>
-      </div>
-      <div class="container footer__meta">
-        <p class="small">Данные о компании — по открытым сведениям Rusprofile (на 25.04.2026).</p>
+        <p class="footer__meta">Открытые сведения: Rusprofile · 25.04.2026</p>
       </div>
     </footer>
   </body>
